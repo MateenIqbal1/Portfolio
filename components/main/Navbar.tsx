@@ -87,15 +87,15 @@ const Navbar = () => {
         </a>
         <hr className="border-t border-gray-600 w-4/5 my-2" />
 
-        {/* Social Icons with extra spacing */}
-        <div className="flex gap-20 pt-6">
+        {/* Social Icons with responsive gap */}
+        <div className="flex gap-8 sm:gap-12 md:gap-16 pt-4">
             {Socials.map(({ name, icon: Icon, href }) => (
                 <a
                     key={name}
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white hover:text-gray-300 text-[22px] "
+                    className="text-white hover:text-gray-300 text-xl sm:text-2xl"
                     title={name}
                     onClick={handleLinkClick}
                 >

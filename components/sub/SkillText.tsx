@@ -1,13 +1,17 @@
 "use client";
-import React from 'react'
-import { motion } from 'framer-motion'
-import { slideInFromLeft, slideInFromTop } from '@/utils/motion'
-import { SparklesIcon } from '@heroicons/react/24/solid'
+
+import React from 'react';
+import { motion } from 'framer-motion';
+import { slideInFromLeft, slideInFromTop } from '@/utils/motion';
+import { SparklesIcon } from '@heroicons/react/24/solid';
 
 const SkillText = () => {
   return (
-    <div className='w-full flex flex-col items-start lg:items-start justify-center px-4'>
-      <motion.div variants={slideInFromTop} className='Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9] mb-2'>
+    <div className='w-full flex flex-col items-start justify-center px-4'>
+      <motion.div
+        variants={slideInFromTop}
+        className='Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9] mb-2'
+      >
         <SparklesIcon className='text-[#b49bff] mr-[10px] h-5 w-5' />
       </motion.div>
 
@@ -20,7 +24,7 @@ const SkillText = () => {
         </span>
       </motion.h2>
     </div>
-  )
-}
+  );
+};
 
-export default SkillText
+export default SkillText;
