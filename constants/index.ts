@@ -217,6 +217,52 @@ export const Skill_data = [
     },
   ];
   
+
+  export const projects = [
+    {
+      name: "Full Stack E-commerce",
+      icons: [
+        { name: "JavaScript", path: "/js.png" },
+        { name: "Tailwind CSS", path: "/tailwind.png" },
+        { name: "React", path: "/react.png" },
+        { name: "Redux", path: "/redux.png" },
+        { name: "Node.js", path: "/node-js.png" },
+        { name: "Express.js", path: "/express.png" },
+        { name: "MongoDB", path: "/mongo2.png" },
+        { name: "Cloudinary", path: "/cloudinary.png" },
+        { name: "PayPal API", path: "/paypal.png" },
+        { name: "shadcn/ui", path: "/shadcnui.jpg" }
+      ]
+    },
+    {
+      name: "Real-time Chat App",
+      icons: [
+        { name: "Socket.IO", path: "/socket.png" },
+        { name: "JavaScript", path: "/js.png" },
+        { name: "Tailwind CSS", path: "/tailwind.png" },
+        { name: "React", path: "/react.png" },
+        { name: "Zustand", path: "/zustand.jpeg" },
+        { name: "Cloudinary", path: "/cloudinary.png" },
+        { name: "Node.js", path: "/node-js.png" },
+        { name: "Express.js", path: "/express.png" },
+        { name: "MongoDB", path: "/mongo2.png" }
+      ]
+    },
+    {
+      name: "AI Image Generator",
+      icons: [
+        { name: "Gemini API", path: "/gemini.png" },
+        { name: "ImageKit", path: "/imagekit.png" },
+        { name: "JavaScript", path: "/js.png" },
+        { name: "Tailwind CSS", path: "/tailwind.png" },
+        { name: "React", path: "/react.png" },
+        { name: "Node.js", path: "/node-js.png" },
+        { name: "Express.js", path: "/express.png" },
+        { name: "MongoDB", path: "/mongo2.png" }
+      ]
+    }
+  ];
+  
   
   
   

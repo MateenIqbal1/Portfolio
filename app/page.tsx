@@ -1,6 +1,7 @@
 import Skills from "@/components/main/Skills";
 import Hero from "../components/main/Hero";
 import Project from "@/components/main/Project";
+import WorkingCard from "@/components/main/WorkingCard";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <div id="projects" className="mt-[-50px] sm:mt-0 scroll-mt-[80px]">
           <Project />
         </div>
-
+          
       </div>
     </main>
   );

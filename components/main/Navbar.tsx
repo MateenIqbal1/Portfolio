@@ -29,7 +29,7 @@ const Navbar = () => {
             <div className='w-full h-full flex items-center justify-between m-auto'>
                 {/* Logo */}
                 <a href="#skills" className='h-auto w-auto flex items-center'>
-                    <Image src='/NavLogo.png' alt='logo' width={70} height={70} className='cursor-pointer hover:animate-slowspin' />
+                    <Image src='/react.png' alt='logo' width={40} height={40} className='cursor-pointer hover:animate-slowspin' />
                     <span className="font-bold ml-[10px] hidden md:block text-gray-300">
                         MERN Stack dev
                     </span>
@@ -68,43 +68,43 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {menuOpen && (
-    <div
-        id="mobile-menu"
-        className="absolute top-[65px] left-0 w-full bg-[#030014e6] backdrop-blur-sm flex flex-col items-center py-5 z-40 text-gray-200 text-lg"
-    >
-        <a href="#about-me" onClick={handleLinkClick} className="py-2 w-full text-center hover:text-gray-300">
-            About me
-        </a>
-        <hr className="border-t border-gray-600 w-4/5 my-1" />
-
-        <a href="#skills" onClick={handleLinkClick} className="py-2 w-full text-center hover:text-gray-300">
-            Skills
-        </a>
-        <hr className="border-t border-gray-600 w-4/5 my-1" />
-
-        <a href="#projects" onClick={handleLinkClick} className="py-2 w-full text-center hover:text-gray-300">
-            Projects
-        </a>
-        <hr className="border-t border-gray-600 w-4/5 my-2" />
-
-        {/* Social Icons with responsive gap */}
-        <div className="flex gap-8 sm:gap-12 md:gap-16 pt-4">
-            {Socials.map(({ name, icon: Icon, href }) => (
-                <a
-                    key={name}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:text-gray-300 text-xl sm:text-2xl"
-                    title={name}
-                    onClick={handleLinkClick}
+                <div
+                    id="mobile-menu"
+                    className="absolute top-[65px] left-0 w-full bg-[#030014e6] backdrop-blur-sm flex flex-col items-center py-5 z-40 text-gray-200 text-lg"
                 >
-                    <Icon />
-                </a>
-            ))}
-        </div>
-    </div>
-)}
+                    <a href="#about-me" onClick={handleLinkClick} className="py-2 w-full text-center hover:text-gray-300">
+                        About me
+                    </a>
+                    <hr className="border-t border-gray-600 w-4/5 my-1" />
+
+                    <a href="#skills" onClick={handleLinkClick} className="py-2 w-full text-center hover:text-gray-300">
+                        Skills
+                    </a>
+                    <hr className="border-t border-gray-600 w-4/5 my-1" />
+
+                    <a href="#projects" onClick={handleLinkClick} className="py-2 w-full text-center hover:text-gray-300">
+                        Projects
+                    </a>
+                    <hr className="border-t border-gray-600 w-4/5 my-2" />
+
+                    {/* Social Icons with responsive gap */}
+                    <div className="flex gap-8 sm:gap-12 md:gap-16 pt-4">
+                        {Socials.map(({ name, icon: Icon, href }) => (
+                            <a
+                                key={name}
+                                href={href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white hover:text-gray-300 text-xl sm:text-2xl"
+                                title={name}
+                                onClick={handleLinkClick}
+                            >
+                                <Icon />
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            )}
 
         </div>
     );
