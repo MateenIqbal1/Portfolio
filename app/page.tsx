@@ -1,7 +1,6 @@
 import Skills from "@/components/main/Skills";
 import Hero from "../components/main/Hero";
 import Project from "@/components/main/Project";
-import WorkingCard from "@/components/main/WorkingCard";
 
 export default function Home() {
   return (
